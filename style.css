@@ -1,9 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+  font-family: "Jost", sans-serif;
+  font-weight: 400;
+}
 
 body {
   background-color: #ccffbd;
+  text-align: center;
 }
 
-h1 {
+.person-name {
   text-align: center;
   color: #be0000;
+  font-family: Lobster;
+  font-size: 100px;
 }
