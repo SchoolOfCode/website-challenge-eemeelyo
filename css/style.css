@@ -6,12 +6,12 @@
   text-decoration: none;
   list-style-type: none;
   font-family: "Jost", sans-serif;
-  font-weight: 400;
 }
 
-body {
-  background-color: #ccffbd;
-  text-align: center;
+/*MAIN ------------------------------------------------------------------------MAIN */
+html, body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.7em;
 }
 
 .person-name {
@@ -20,3 +20,48 @@ body {
   font-family: Lobster;
   font-size: 100px;
 }
+
+/* NAVBAR ---------------------------------------------------------------------- NAVBAR */
+#navbar {
+  background-color: aquamarine;
+  color:#810000;
+  overflow: auto;
+}
+
+#navbar a {
+  color:#810000;
+}
+
+#navbar h1 {
+  float: left;
+  padding-top: 20px;
+}
+
+#navbar ul {
+  list-style: none;
+  float: right;
+}
+
+#navbar ul li {
+  float: left;
+}
+
+#navbar ul li a {
+  display: block;
+  padding: 20px;
+  text-align: center;
+}
+
+#navbar ul li a:hover,
+#navbar ul li a.current{
+  background: greenyellow;
+  color: #810000;
+} 
+/*-UTLITIES --------------------------------------------------------------------UTILITIES */
+.container {
+  margin: auto;
+  max-width: 1000px;
+  overflow: auto;
+  padding: 0 20px;
+}
+
