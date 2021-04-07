@@ -31,7 +31,7 @@ p {
 /*-UTLITIES --------------------------------------------------------------------UTILITIES */
 .container {
   margin: auto;
-  max-width: 1000px;
+  max-width: 1200px;
   overflow: auto;
   padding: 0 20px;
 }
@@ -41,12 +41,19 @@ p {
  font-family: 'Zilla Slab Highlight', cursive;
 }
 
+.highlight2 {
+  color: #caffbf;
+  font-family: 'Zilla Slab Highlight', cursive;
+ }
+
 .highlight-title {
  color: #ff9b85;
  font-family: 'Allura', cursive;
- font-size: 50px;
+ font-size: 70px;
  margin: 80px 50px 50px 50px;
 }
+
+
 
 .cursive {
   font-family: 'Allura', cursive;
@@ -64,6 +71,12 @@ p {
 .clr {
   clear: both;
 }
+
+.bg-primary {
+  background: #f566a3;
+  color: #caffbf;;
+}
+
 /* NAVBAR ---------------------------------------------------------------------- NAVBAR */
 #navbar {
   background-color: #f566a3;
@@ -146,10 +159,6 @@ p {
   
 }
 
-#about-her .about-content h2 {
-  font-size: 50px;
-  /* margin: 50px 0 20px 50px;  */
-}
 
 #about-her p {
   font-family: 'Architects Daughter', cursive;
@@ -163,7 +172,25 @@ p {
 /* Pomegranate -------------------------------------------------Pomegranate */
 
 #pomegranate {
-  height: 600px;
-  background: url(../images/pomegranate.jpg) no-repeat center center/cover;
-  /* padding-top: 50px; */
+  height: 600px; 
+  background: url(../images/pomegranate.jpg) no-repeat center center/cover;  
 }
+
+#pomegranate .pomegranate-content {
+  opacity: 0.8;
+  line-height: 7em;
+}
+
+#pomegranate h2 {
+  color: #caffbf;
+  margin: 50px;
+}
+
+#pomegranate p {
+  font-size: 50px;
+  text-align: center;
+}
+
+/* WORK ------------------------------------- WORK */
+
+
