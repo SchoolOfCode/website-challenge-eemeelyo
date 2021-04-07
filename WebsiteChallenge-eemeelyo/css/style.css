@@ -178,7 +178,7 @@ p {
 
 #pomegranate .pomegranate-content {
   opacity: 0.8;
-  line-height: 7em;
+  line-height: 7rem;
 }
 
 #pomegranate h2 {
@@ -194,3 +194,23 @@ p {
 /* WORK ------------------------------------- WORK */
 
 
+
+/* @media --------------------------------------------------- @meda */
+
+@media (max-width: 500px) {
+  #pomegranate .pomegranate-content {
+    line-height: 4rem;
+  }
+  #hero .hero-content h1 {
+    font-size: 7rem;
+  }
+}
+
+@media (min-width: 501px) and (max-width: 768px) {
+  #pomegranate .pomegranate-content {
+    line-height: 4.5rem;
+  }
+  #hero .hero-content h1 {
+    font-size: 8rem;
+  }
+}
