@@ -95,6 +95,7 @@ nav {
   font-family: 'Architects Daughter', cursive;
   font-size: 1.5rem;
   font-weight: bold;
+  padding-left: 20px;
 }
 .nav-list li:hover {
   background-color: #f566a3;
@@ -114,53 +115,11 @@ nav {
 }
 
 
-/* 
-.nav-list {
-  background: #caffbf;;
-  margin: 0;
-  padding: 1rem 0;
-  display:flex;
-  justify-content: flex-end;
-  align-items: center;
-  flex-direction: column;
-}
-
-.nav-item {
-  margin-right:2rem;
-  
-}
-
-.nav-item a {
-  color: #ff9b85;
-  font-family: 'Architects Daughter', cursive;
-  transition: all 200ms ease-in;
-  font-size: 1.5rem;
-  font-weight: bold;
-}
-
-.nav-item a:hover{
-  background: #ff9b85;
-  color: #fff;
-}
-
-.nav-item:first-child{
-  
-  margin-right: auto;
-  margin-left: 2rem;
-  font-family: 'Allura', cursive;
-
-}
-
-.nav-list .logo {
-  color: red;
-}
-   */
-
 /* ----------------------- HERO ------------ */
 
 #hero {
   background: url('../images/BG-Snow.jpg') no-repeat center center/cover;
-  height: 600px;
+  height: 95vh;
 
 }
 
@@ -213,7 +172,7 @@ nav {
 /* Pomegranate -------------------------------------------------Pomegranate */
 
 #pomegranate {
-  height: 600px; 
+  height: 100vh; 
   background: url(../images/pomegranate.jpg) no-repeat center center/cover;  
 }
 
@@ -232,11 +191,71 @@ nav {
   text-align: center;
 }
 
-/* WORK ------------------------------------- WORK */
+/* WORK ----------------------------------------------------------------------- WORK */
+
+.work-1 {
+  border: 2px solid white;
+  width: 200px;
+  display: flex;
+  flex-grow: 1;
+}
+
+.text-info {
+  background: url(../images/JohnLewis.jpg) no-repeat center center/cover ;
+  width: 200px;
+  height: 200px;
+  text-align: center;
+  /* padding-top: 50px; */
+  font-size: 0;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  /* justify-content: space-around; */
+  
+
+}
+
+.text-info {
+  font-size: 20px;
+}
+
+.work-1-title,
+.work-1-date {
+  font-size: 0;
+}
+
+.work-1-title:hover,
+.work-1-date:hover {
+  font-size: 20px;
+  color: white;
+}
+
+.text-info:hover {
+  background:#ff9b85;
+  width: 200px;
+  height: 200px;
+  text-align: center;
+  /* padding-top: 50px; */
+}
 
 
 
-/* @media --------------------------------------------------- @meda */
+/* .work-1 {
+  background: #f4f4f4;
+  border: #ccc solid 2px;
+  margin: 10px;
+  padding: 10px;
+  text-align: center;
+  border-radius: 10px;
+  width: 100px;
+}
+.work-1 h3 {
+  width: 200px;
+} */
+
+
+
+/* @media ------------------------------------------------------------------- @meda */
 
 @media (max-width: 500px) {
   #pomegranate .pomegranate-content {
