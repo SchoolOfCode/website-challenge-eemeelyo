@@ -31,9 +31,7 @@ p {
 /*-UTLITIES --------------------------------------------------------------------UTILITIES */
 .container {
   margin: auto;
-  max-width: 1200px;
-  overflow: auto;
-  padding: 0 20px;
+  /* width: 1200px; */
 }
 
 .highlight {
@@ -114,19 +112,33 @@ nav {
   margin-right: auto;
 }
 
+#contact {
+  background-color: white;
+}
+
+.contact{
+  padding-top: .5px;
+}
+
 
 /* ----------------------- HERO ------------ */
 
 #hero {
   background: url('../images/BG-Snow.jpg') no-repeat center center/cover;
   height: 95vh;
+  
 
 }
 
 #hero .hero-content {
   color: #f566a3;
   text-align: center;
-  padding-top: 70px;
+  padding-top: 300px;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
 #hero .hero-content h1 {
@@ -134,6 +146,8 @@ nav {
   line-height: 1em;
   font-family: 'Allura', cursive;
   color: #ff9b85;
+  max-width: 1200px;
+  margin:auto;
 }
 
 #hero .hero-content p {
@@ -147,18 +161,18 @@ nav {
   margin: auto;
   width: 200px;
   border-radius: 50%;
-  border: 10px solid #ff9b85;;
+  border: 10px solid #ff9b85;
 }
 
 
 /* ABOUT ----------------------------------------- ABOUT */
 
 #about-her {
-  max-width: 1000px;
-  margin: 0 auto 50px auto;
+  max-width: 1200px;
+  margin: auto;
+  padding-bottom: 50px;
   
 }
-
 
 #about-her p {
   font-family: 'Architects Daughter', cursive;
@@ -174,11 +188,17 @@ nav {
 #pomegranate {
   height: 100vh; 
   background: url(../images/pomegranate.jpg) no-repeat center center/cover;  
+  display: flex;
 }
 
-#pomegranate .pomegranate-content {
+.pomegranate-content {
+  width: 1200px;
+  margin: 50px auto;
+  padding: 0 20px;
   opacity: 0.8;
-  line-height: 7rem;
+  line-height: 10rem;
+  align-items: center;
+  justify-content: center;
 }
 
 #pomegranate h2 {
@@ -192,68 +212,88 @@ nav {
 }
 
 /* WORK ----------------------------------------------------------------------- WORK */
-
-.work-1 {
-  border: 2px solid white;
-  width: 200px;
+#work {
+  max-width: 1200px;
+  margin:auto;
+}
+.work-content {
+  margin: auto;
+  height: 100%;
+}
+.work-info {
+  font-family: 'Architects Daughter', cursive;
+  color: #f566a3;
+  font-size: 25px;
+  padding: 0 20px;
+  text-align:center;
+}
+.work-container {
   display: flex;
   flex-grow: 1;
+  margin: auto;
+  max-width: 1200px;
+  overflow: auto;
+  padding: 50px 20px;
+  justify-content: space-between;
 }
 
-.text-info {
-  background: url(../images/JohnLewis.jpg) no-repeat center center/cover ;
+.works{
+  position: relative;
   width: 200px;
-  height: 200px;
-  text-align: center;
-  /* padding-top: 50px; */
-  font-size: 0;
+}
+
+.work-image {
+  display: block;
+  width: 100%;
+  border-radius: 10px;
+  margin: 10px;
+}
+
+.work-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  color: #ffffff;
+  font-family: 'Architects Daughter', cursive;
   display: flex;
   flex-direction: column;
-  /* align-items: center; */
-  /* justify-content: space-around; */
-  
-
-}
-
-.text-info {
-  font-size: 20px;
-}
-
-.work-1-title,
-.work-1-date {
-  font-size: 0;
-}
-
-.work-1-title:hover,
-.work-1-date:hover {
-  font-size: 20px;
-  color: white;
-}
-
-.text-info:hover {
-  background:#ff9b85;
-  width: 200px;
-  height: 200px;
+  align-items: center;
+  justify-content: center;
   text-align: center;
-  /* padding-top: 50px; */
+  opacity: 0;
+  transition: 0.25s;
 }
 
+.work-overlay:hover{
+  opacity: 1;
+}
 
+.work-title {
+  font-weight: bold;
+}
 
-/* .work-1 {
-  background: #f4f4f4;
-  border: #ccc solid 2px;
-  margin: 10px;
-  padding: 10px;
+/* -- CONTACT ---------------------------------------------------------- CONTACT */
+.contact {
+  max-width: 1200px;
+  margin:auto;
+  padding-bottom:50px;
+}
+.contact img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+}
+
+/* ---- FOOTER ---------------------------------------------------------- FOOTER */
+#main-footer {
   text-align: center;
-  border-radius: 10px;
-  width: 100px;
+  background: #caffbf;
+  font-weight: bold;
 }
-.work-1 h3 {
-  width: 200px;
-} */
-
-
 
 /* @media ------------------------------------------------------------------- @meda */
 
@@ -269,6 +309,12 @@ nav {
   }
   .nav-list li {
     border-top: 1px dotted;
+  }
+  .work-container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
   }
 }
 
@@ -286,5 +332,11 @@ nav {
 
   #hero .hero-content h1 {
     font-size: 8rem;
+  }
+
+  .work-container {
+    flex-direction: column;
+    align-items: center;
+  justify-content: center;
   }
 }
