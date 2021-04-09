@@ -1,0 +1,346 @@
+* {                               /* RESET-------------*/
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+  font-family: 'Roboto', sans-serif;
+
+}
+
+/*MAIN ------------------------------------------------------------------------MAIN */
+html, body {
+  line-height: 1.7em;
+  background-color:#caffbf;
+}
+
+a {
+  color:greenyellow;
+  text-decoration: none;
+}
+
+h1, h2, h3 {
+  padding-bottom: 20px;
+}
+
+p {
+  margin: 10px 0;
+}
+
+/*-UTLITIES --------------------------------------------------------------------UTILITIES */
+.container {
+  margin: auto;
+  /* width: 1200px; */
+}
+
+.highlight {
+ color: #ff9b85;
+ font-family: 'Zilla Slab Highlight', cursive;
+}
+
+.highlight2 {
+  color: #caffbf;
+  font-family: 'Zilla Slab Highlight', cursive;
+ }
+
+.highlight-title {
+ color: #ff9b85;
+ font-family: 'Allura', cursive;
+ font-size: 70px;
+ margin: 80px 50px 50px 50px;
+}
+
+.cursive {
+  font-family: 'Allura', cursive;
+}
+
+.archi {
+  font-family: 'Architects Daughter', cursive;
+  color: #f566a3;
+}
+
+.roboto {
+  font-family: 'Roboto', sans-serif;
+}
+
+.clr {
+  clear: both;
+}
+
+.bg-primary {
+  background: #f566a3;
+  color: #caffbf;
+}
+
+/* NAVBAR ---------------------------------------------------------------------- NAVBAR */
+nav {
+  font-size: 2rem;
+}
+.nav-list{
+  display: flex;
+  justify-content: flex-end;
+  padding: 0 2rem;
+  
+}
+.nav-list li{
+  cursor: pointer;
+  padding: 0.5rem;
+  text-align: center;
+}
+.nav-list a {
+  color: #ff9b85;
+  font-family: 'Architects Daughter', cursive;
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding-left: 20px;
+}
+.nav-list li:hover {
+  background-color: #f566a3;
+  color: white;
+}
+
+.nav-list a:hover{
+  color:#caffbf;
+}
+.logo a{
+  color: red;
+  font-weight: 1000;
+}
+
+.logo img{
+  width: 20px;
+}
+
+.nav-item:first-child{
+  margin-right: auto;
+}
+
+#contact {
+  background-color: white;
+}
+
+.contact{
+  padding-top: .5px;
+}
+
+
+/* ----------------------- HERO ------------ */
+
+#hero {
+  background: url('../images/BG-Snow.jpg') no-repeat center center/cover;
+  height: 95vh;
+  
+
+}
+
+#hero .hero-content {
+  color: #f566a3;
+  text-align: center;
+  padding-top: 300px;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+#hero .hero-content h1 {
+  font-size: 150px;
+  line-height: 1em;
+  font-family: 'Allura', cursive;
+  color: #ff9b85;
+  max-width: 1200px;
+  margin:auto;
+}
+
+#hero .hero-content p {
+  padding: 20px;
+  line-height: 1.7em;
+  font-size: 30px;
+}
+
+#hero .hero-image img {
+  display: block;
+  margin: auto;
+  width: 200px;
+  border-radius: 50%;
+  border: 10px solid #ff9b85;
+}
+
+
+/* ABOUT ----------------------------------------- ABOUT */
+
+#about-her {
+  max-width: 1200px;
+  margin: auto;
+  padding-bottom: 50px;
+  
+}
+
+#about-her p {
+  font-family: 'Architects Daughter', cursive;
+  padding: 10px 20px;
+  font-size: 25px;
+  color: #f566a3;
+  line-height: 1.5em;
+  text-align: center;
+}
+
+/* Pomegranate -------------------------------------------------Pomegranate */
+
+#pomegranate {
+  height: 100vh; 
+  background: url(../images/pomegranate.jpg) no-repeat center center/cover;  
+  display: flex;
+}
+
+.pomegranate-content {
+  width: 1200px;
+  margin: 50px auto;
+  padding: 0 20px;
+  opacity: 0.8;
+  line-height: 10rem;
+  align-items: center;
+  justify-content: center;
+}
+
+#pomegranate h2 {
+  color: #caffbf;
+  margin: 50px;
+}
+
+#pomegranate p {
+  font-size: 50px;
+  text-align: center;
+}
+
+/* WORK ----------------------------------------------------------------------- WORK */
+#work {
+  max-width: 1200px;
+  margin:auto;
+}
+.work-content {
+  margin: auto;
+  height: 100%;
+}
+.work-info {
+  font-family: 'Architects Daughter', cursive;
+  color: #f566a3;
+  font-size: 25px;
+  padding: 0 20px;
+  text-align:center;
+}
+.work-container {
+  display: flex;
+  flex-grow: 1;
+  margin: auto;
+  max-width: 1200px;
+  overflow: auto;
+  padding: 50px 20px;
+  justify-content: space-between;
+}
+
+.works{
+  position: relative;
+  width: 200px;
+}
+
+.work-image {
+  display: block;
+  width: 100%;
+  border-radius: 10px;
+  margin: 10px;
+}
+
+.work-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  color: #ffffff;
+  font-family: 'Architects Daughter', cursive;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  opacity: 0;
+  transition: 0.25s;
+}
+
+.work-overlay:hover{
+  opacity: 1;
+}
+
+.work-title {
+  font-weight: bold;
+}
+
+/* -- CONTACT ---------------------------------------------------------- CONTACT */
+.contact {
+  max-width: 1200px;
+  margin:auto;
+  padding-bottom:50px;
+}
+.contact img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+}
+
+/* ---- FOOTER ---------------------------------------------------------- FOOTER */
+#main-footer {
+  text-align: center;
+  background: #caffbf;
+  font-weight: bold;
+}
+
+/* @media ------------------------------------------------------------------- @meda */
+
+@media (max-width: 500px) {
+  #pomegranate .pomegranate-content {
+    line-height: 4rem;
+  }
+  #hero .hero-content h1 {
+    font-size: 7rem;
+  }
+  .nav-list {
+    flex-direction: column;
+  }
+  .nav-list li {
+    border-top: 1px dotted;
+  }
+  .work-container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+  }
+}
+
+@media (min-width: 501px) and (max-width: 800px) {
+  #pomegranate .pomegranate-content {
+    line-height: 4.5rem;
+  }
+  .nav-list {
+    flex-direction: column;
+  }
+  .nav-list li{
+    border-top: 1px dotted;
+    
+  }
+
+  #hero .hero-content h1 {
+    font-size: 8rem;
+  }
+
+  .work-container {
+    flex-direction: column;
+    align-items: center;
+  justify-content: center;
+  }
+}
