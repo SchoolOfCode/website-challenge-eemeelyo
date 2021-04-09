@@ -99,6 +99,10 @@ nav {
   background-color: #f566a3;
   color: white;
 }
+
+.nav-list a:hover{
+  color:#caffbf;
+}
 .logo a{
   color: red;
   font-weight: 1000;
